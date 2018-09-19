@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import javax.xml.transform.Result;
+
 public class MainActivity extends AppCompatActivity {
 
     Button button;
@@ -25,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void check(View view) {
+    public void check() {
+
+
 
     }
 
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickIot(View view){
-        Intent intent = new Intent(this, LogHistory.class);
+        Intent intent = new Intent(this, ResultActivity.class);
         startActivity(intent);
     }
 

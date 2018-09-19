@@ -4,43 +4,36 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="검사 할 기기를 선택해 주세요"/>
+
     <ListView
         android:id="@+id/Result"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:cacheColorHint="#00000000"
-        android:dividerHeight="0dip" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="취소" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="확인" />
-    </LinearLayout>
-    <TextView
-        android:id="@+id/WifiState"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:cacheColorHint="#00000000"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="0dip" />
+    <!--<TextView-->
+        <!--android:id="@+id/WifiState"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
 
     <TextView
         android:id="@+id/Scanning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="취소"/>
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="확인"/>
+    </LinearLayout>
 
 </LinearLayout>

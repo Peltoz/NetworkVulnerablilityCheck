@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.networkvulnerablilitycheck">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <application
         android:allowBackup="true"
@@ -25,6 +26,16 @@
 
         </activity>
         <activity android:name=".SearchDevice"
+            android:theme="@style/DialogTheme">
+
+        </activity>
+        <activity android:name=".ResultActivity">
+
+        </activity>
+        <activity android:name=".Progress">
+
+        </activity>
+        <activity android:name=".DetailPopup"
             android:theme="@style/DialogTheme">
 
         </activity>

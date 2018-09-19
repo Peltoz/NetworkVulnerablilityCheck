@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="219dp"
+        android:layout_height="match_parent"
         android:background="#FCFDFC"
         android:orientation="vertical"
         android:padding="10dp">
@@ -157,5 +157,5 @@
                     android:textSize="13dp" />
             </TableRow>
         </TableLayout>
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
